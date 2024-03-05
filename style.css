@@ -38,7 +38,7 @@ body {
 .cookies a {
   color: #f27471;
   font-weight: 500;
-  text-decoration: none;
+  text-decoration: underline;
 }
 #cookies-btn,
 #deccookies-btn {
@@ -50,6 +50,7 @@ body {
   border: 3px solid #f27471;
   background-color: #f27471;
   color: white;
+  margin-top: 10px;
 }
 
 @media (max-width: 1024px) {
