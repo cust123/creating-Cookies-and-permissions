@@ -21,6 +21,11 @@ document.querySelector("#cookies-btn").addEventListener("click", () => {
   setCookie("cookie", true, 15);
 });
 
+document.querySelector("#deccookies-btn").addEventListener("click", () => {
+  setCookie("cookieConsent", "declined", -1); // Setting the cookie to be declined
+  document.querySelector("#cookies").style.display = "none"; // Hide the cookie consent message
+});
+
 cookieMessage = () => {
   if (!getCookie("cookie"))
     document.querySelector("#cookies").style.display = "block";
